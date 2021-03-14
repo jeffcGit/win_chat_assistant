@@ -15,7 +15,6 @@
 ######################################
 
 use warnings;
-
 use strict;
 use English qw' -no_match_vars ';
 use Config;
@@ -97,7 +96,7 @@ sub chat {
     if ( /^\s*$/ || /^ *$/ )    #regx to match empty space entry
     {
         print "Seems like you did not type a thing...\n";
-        dots();                 # Working simulation
+        dots();  # Working simulation
     }
     elsif (m/\bhi\b/i
         || m/\bhello\b/i
